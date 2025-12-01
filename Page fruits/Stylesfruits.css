@@ -1,0 +1,12 @@
+
+.produit {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.photo-produit {
+    width: 150px; /* Taille de la photo */
+    height: auto;
+    margin-right: 15px; /* Espace entre la photo et le texte */
+}
