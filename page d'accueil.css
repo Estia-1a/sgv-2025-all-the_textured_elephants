@@ -54,7 +54,9 @@ nav a:hover {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end; /* Aligne le contenu à droite */
+    padding: 0 5%; /* Ajoute un peu d'espace sur les côtés */
+    width: 100%;
 }
 
 .hero-content {
@@ -64,6 +66,7 @@ nav a:hover {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 10%; /* Décale un peu vers la gauche pour ne pas coller au bord */
 }
 
 .hero-content h1 {
@@ -76,6 +79,17 @@ nav a:hover {
 .hero-content p {
     font-size: 1.1rem;
     color: #666;
+}
+/* Responsive : pour les petits écrans */
+@media (max-width: 768px) {
+    .hero {
+        justify-content: center; /* Centre le contenu sur mobile */
+    }
+
+    .hero-content {
+        margin-right: 0;
+        max-width: 90%; /* Prend presque toute la largeur */
+    }
 }
 
 /* Responsive */
