@@ -1,11 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #fff;
+    background-color: #fff0c4;
 }
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .sidebar {
@@ -50,7 +51,7 @@ body {
     border-radius: 8px;
 }
 
-.info h1 {
+.info h4 {
     margin: 10px;
     font-size: 24px;
 }
