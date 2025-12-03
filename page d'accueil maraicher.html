@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="page d'acceuil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page d'accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title> Bienvenue chez le Maraicher Basque </title>
 </head>
 <body>
     <header>
-        <div id="logo left" >
-            <img src="./https://m.media-amazon.com/images/I/81pl8nqGT7L._UY1000_.jpg" alt="logo with a fruit bag" height="100" title="fruit bag logo">
+        <div class="left">
+            <img src="freepik_br_c702c4d7-c482-425a-a717-7aae8f4fd94d.png" alt="logo" height="100" title="fruit bag logo">
+            <h1> Bienvenue chez le Maraicher Basque</h1>
         </div>
-
         <nav>
-            <ul>
-                <li><a href="#">Nos paniers</a></li>
-                <li><a href="#">Livraisons</a></li>
-                <li><a href="#">Magasin de détail</a></li>
-                <li><a href="#">Entreprise</a></li>
-            </ul>
+            <div class ="middle">
+                <ul>
+                    <li><a href="#">Nos paniers</a></li>
+                    <li><a href="#">Livraisons</a></li>
+                    <li><a href="#">Magasin de détail</a></li>
+                    <li><a href="#">Entreprise</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <div id="right">
-            <span>🔍</span>
-            <span>🛒</span>   
+        <div class="right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-basket"></i>
+            <i class="fas fa-bars"></i>  
         </div>
-
     </header>
 
-      <h1>En direct de nos regions </h1>
+    <main>
+        <div class="carousel">
 
-        <p>Nous privilégions des producteurs locaux pour vous proposer des produits frais, durables et en circuit court.</p>
+            <div class="slide active" style="background-image: url('https://thumbs.dreamstime.com/b/vegetable-market-6333220.jpg');background-size: cover; background-position: center; height: 80vh; width: 100%;">
+                <div class="slide-content slide-text-right">
+                    <h2>En direct de nos regions </h2>
+                    <p>Nous privilégions des producteurs locaux pour vous proposer des produits frais, durables et en circuit court.</p>
+                </div>
+            </div>
+        
+            <div class="slide" style="background-image: url('a41e47f6e2_50161146_fruits-legumes-maksim-šmeljov-adobe-stock.jpg');background-size: cover; background-position: center; height: 80vh; width: 100%;">
+                <div class="slide-content slide-text-right">
+                    <h3>Découvrez nos produits locaux</h3>
+                    <p>Des producteurs passionnés et un circuit court pour un goût incomparable.</p>
+                </div>    
+            </div>
 
+            <div class="slide" style="background-image: url('R.jpg');background-size: cover; background-position: center; height: 80vh; width: 100%;">
+                <div class="slide-content slide-text-right">  
+                    <h4>Nos horaires</h4>
+                    <p>Lundi : 13h à 18h<br>Mercredi à Vendredi : 8h30 à 19h<br>Samedi : 10h30 à 18h</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
