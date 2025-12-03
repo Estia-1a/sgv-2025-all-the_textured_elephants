@@ -51,11 +51,11 @@ nav a:hover {
     color: #4a8b7e;
 }
 
-.icons {
+.right {
     display: flex;
     gap: 1.5rem;
     font-size: 1.2rem;
-    color: #5a9b8e;
+    color: #0b0b0b;
 }
 .slide {
     display: block; /* toutes les slides apparaissent */
@@ -77,6 +77,7 @@ nav a:hover {
     padding: 15px;
     border-radius: 8px;
     max-width: 400px;
+    text-align: center;
 }
 
 .slide-content h2,
@@ -90,7 +91,25 @@ nav a:hover {
     display: inline-block;   /* pour que le fond s'ajuste au texte */
     margin-bottom: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
+
+/* Tous les titres dans le carousel / superposé ont la même taille */
+.slide-content h2,
+.slide-content h3,
+.slide-content h4 {
+    font-size: 2rem;    /* même taille pour tous */
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;        /* ou blanc selon ton style */
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 
 /* TEXTE DANS LES SLIDES */
 .slide-content p {
