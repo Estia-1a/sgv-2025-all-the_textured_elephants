@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+#right {
+    border: thin red solid;
+}
+
+#left {
+    border: thin green solid;
+}
+#middle {
+    border : thin rgb(128, 0, 41) solid;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +61,7 @@ nav a:hover {
 .hero {
     height: 80vh;
     background-size: cover;
-    background-position: center;*
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -80,16 +90,4 @@ nav a:hover {
 .hero-content p {
     font-size: 1.1rem;
     color: #666;
-}
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        justify-content: center; /* centre le contenu sur mobile*/
-    }
-    .hero-content {
-        margin-right: 0; /* Pas de marge à droite sur mobile */
-        text-align: center; /* Centre le texte sur mobile */
-    }
-
-
 }
