@@ -97,12 +97,19 @@ nav a:hover {
     margin-top: 5px;
     line-height: 1.4;
 }
+/* CONTENEUR LOGO + TEXTE CENTRÉ */
+.left {
+    display: flex;
+    flex-direction: column; /* logo au dessus, texte en dessous */
+    align-items: center;    /* centrer horizontalement */
+    gap: 10px;              /* espace entre logo et texte */
+}
 /* TEXTE SUPERPOSÉ DANS LE HEADER */
 .superpose {
     font-size: 2rem;          /* taille générale */
     font-weight: bold;
     line-height: 1.2;
-    text-align: left;          /* aligne avec le logo */
+    text-align: center;          /* aligne avec le logo */
     margin-top: 10px;
 }
 
