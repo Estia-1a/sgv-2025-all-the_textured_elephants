@@ -51,7 +51,8 @@ nav a:hover {
 .hero {
     height: 80vh;
     background-size: cover;
-    background-position: center;
+    background-position: center;*
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Aligne le contenu à droite */
@@ -60,12 +61,12 @@ nav a:hover {
 }
 
 .hero-content {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 3rem;
-    text-align: center;
-    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    text-align: left;
+    max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin-right: 10%; /* Décale un peu vers la gauche pour ne pas coller au bord */
 }
 
@@ -80,34 +81,15 @@ nav a:hover {
     font-size: 1.1rem;
     color: #666;
 }
-/* Responsive : pour les petits écrans */
-@media (max-width: 768px) {
-    .hero {
-        justify-content: center; /* Centre le contenu sur mobile */
-    }
-
-    .hero-content {
-        margin-right: 0;
-        max-width: 90%; /* Prend presque toute la largeur */
-    }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-    header {
-        padding: 1rem;
-        flex-direction: column;
-        gap: 1rem;
+    .hero {
+        justify-content: center; /* centre le contenu sur mobile*/
+    }
+    .hero-content {
+        margin-right: 0; /* Pas de marge à droite sur mobile */
+        text-align: center; /* Centre le texte sur mobile */
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
 
-    .hero-content h1 {
-        font-size: 2rem;
-    }
 }
-
