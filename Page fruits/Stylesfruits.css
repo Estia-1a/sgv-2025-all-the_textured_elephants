@@ -1,12 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-.produit {
+.Produits {
     display: flex;
-    align-items: center;
-    margin-top: 10px;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .photo-produit {
-    width: 150px; /* Taille de la photo */
+    width: 200px;
     height: auto;
-    margin-right: 15px; /* Espace entre la photo et le texte */
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.Prix {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.infos-produit {
+    font-size: 16px;
+    color: #333;
 }
