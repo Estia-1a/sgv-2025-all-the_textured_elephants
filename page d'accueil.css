@@ -58,87 +58,50 @@ nav a:hover {
     color: #5a9b8e;
 }
 .carousel {
-    position: relative;
     width: 100%;
-    height: 80vh; /* même hauteur que ton hero */
     overflow: hidden;
+    height: 80vh;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* 3 slides */
+    height: 100%;
+    animation: slideAnimation 15s infinite; /* animation automatique */
 }
 
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    flex-shrink: 0;
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
-    opacity: 0;        /* Cachée par défaut */
-    transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-    opacity: 1;         /* Slide visible */
-}
-
-.slide {
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Aligne le contenu à droite */
-    padding: 0 5%; /* Ajoute un peu d'espace sur les côtés */
-    width: 100%;
+    justify-content: flex-end;
+    padding: 0 5%;
+    position: relative;
 }
 
 .slide-content {
-    position: absolute;
-    bottom: 15%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    text-align: left;
-    max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin-right: 10%; /* Décale un peu vers la gauche pour ne pas coller au bord */
+    max-width: 400px;
 }
 
-.slide-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 1rem;
+.slide-content h2, .slide-content h3, .slide-content h4 {
+    margin-bottom: 10px;
 }
 
 .slide-content p {
-    font-size: 1.1rem;
-    color: #666;
-}
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255,255,255,0.7);
-    border: none;
-    padding: 10px 15px;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    z-index: 20;
+    line-height: 1.5;
 }
 
-.prev {
-    left: 20px;
-}
-
-.next {
-    right: 20px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(255,255,255,0.95);
+/* Animation CSS */
+@keyframes slideAnimation {
+    0%, 33%   { transform: translateX(0); }
+    34%, 66%  { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
 }
