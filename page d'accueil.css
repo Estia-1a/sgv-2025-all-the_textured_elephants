@@ -98,11 +98,6 @@ nav a:hover {
     line-height: 1.4;
 }
 
-/* AJOUT DE BORDURES TEMPORAIRES POUR VÉRIFICATION */
-header { border: 1px solid red; }
-.slide { border: 1px dashed blue; }
-.slide-content { border: 1px solid yellow; }
-
 /* RESPONSIVE SIMPLE */
 @media screen and (max-width: 768px) {
     header {
