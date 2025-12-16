@@ -1,88 +1,96 @@
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #faf7f7;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-        .hero {
-            text-align: center;
-            padding: 50px;
-            background: url('../MEDIAS/citrouilles.jpg') no-repeat center/cover;
-            color: white;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 10px;
-            width: 250px;
-            text-align: center;
-            padding: 15px;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #333;
-            color: white;
-        }
-        
-        .top-left {
-            position: fixed; 
-            top: 0;          
-            left: 0;         
-            display: flex;   
-            flex-direction: column; 
-            gap: 10px;       
-            background-color: #4CAF50; 
-            padding: 10px;
-        }
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #faf7f7;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4CAF50;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('../MEDIAS/citrouilles.jpg') no-repeat center/cover;
+    color: white;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+.top-middle {
+    text-align: center;
+}
+.top-left {
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    display: flex;   
+    flex-direction: column; 
+    gap: 10px;       
+    background-color: #4CAF50; 
+    padding: 10px;
+}
 
-        .top-right {
-            position: fixed; 
-            top: 0;          
-            right: 0;         
-            display: flex;   
-            flex-direction: column; 
-            gap: 3px;       
-            background: url('/MEDIAS/freepik_br_c702c4d7-c482-425a-a717-7aae8f4fd94d.png') no-repeat center/cover;
-            background-color: #4CAF50; 
-            padding: 3px;
-        }
+.top-right {
+    position: fixed; 
+    top: 0;          
+    right: 0;         
+    display: flex;   
+    flex-direction: column; 
+    gap: 3px;       
+    background: url('/MEDIAS/freepik_br_c702c4d7-c482-425a-a717-7aae8f4fd94d.png') no-repeat center/cover;
+    background-color: #4CAF50; 
+    padding: 3px;
+}
         
-        .logo {
-            width: 10px;      
-            height: 10px;      
-        }
+.logo {
+    width: 10px;      
+    height: 10px;      
+}
