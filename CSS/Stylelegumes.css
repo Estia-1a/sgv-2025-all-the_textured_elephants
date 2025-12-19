@@ -1,96 +1,110 @@
+/* RESET DE BASE */
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   background-color: #faf7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf7f7;
 }
+
+/* ===== HEADER ===== */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: white;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    color: white;
 }
-nav {
+
+/* MENU À GAUCHE (EN LIGNE) */
+.top-left {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.top-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    background-color: #333;
+    gap: 20px;
 }
-nav a {
-    color: white;
-    padding: 14px 20px;
+
+.top-left a {
     text-decoration: none;
+    color: #4CAF50;
+    font-weight: 500;
 }
-nav a:hover {
-    background-color: #4CAF50;
+
+.top-left a:hover {
+    text-decoration: underline;
 }
-.hero {
+
+/* LOGO + TEXTE CENTRÉS */
+.top-middle {
     text-align: center;
-    padding: 50px;
-    background: url('../MEDIAS/citrouilles.jpg') no-repeat center/cover;
-    color: white;
 }
-.hero h1 {
+
+.logo img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.superpose {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blancs {
+    color: #2e7d32;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: url("../MEDIAS/citrouilles.jpg") no-repeat center / cover;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
     font-size: 3em;
     margin-bottom: 10px;
 }
+
+/* ===== PRODUITS ===== */
 .content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px;
 }
+
 .card {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 10px;
+    padding: 15px;
     width: 250px;
     text-align: center;
-    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 .card img {
     width: 100%;
     border-radius: 10px;
 }
+
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 15px;
     background-color: #333;
     color: white;
-}
-.top-middle {
-    text-align: center;
-}
-.top-left {
-    position: fixed; 
-    top: 0;          
-    left: 0;         
-    display: flex;   
-    flex-direction: column; 
-    gap: 10px;       
-    background-color: #4CAF50; 
-    padding: 10px;
-}
-
-.top-right {
-    position: fixed; 
-    top: 0;          
-    right: 0;         
-    display: flex;   
-    flex-direction: column; 
-    gap: 3px;       
-    background: url('/MEDIAS/freepik_br_c702c4d7-c482-425a-a717-7aae8f4fd94d.png') no-repeat center/cover;
-    background-color: #4CAF50; 
-    padding: 3px;
-}
-        
-.logo {
-    width: 10px;      
-    height: 10px;      
+    font-size: 14px;
 }
